@@ -7,6 +7,8 @@
     <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pcg_scripts/SimpleRandomWalkDungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pcg_scripts/SimpleRandomWalkDungeonGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pcg_scripts/TilemapVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pcg_scripts/TilemapVisualizer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/AbstractDungeonGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/TilemapVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/TileDragAndDrop.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -99,7 +102,7 @@
       <workItem from="1722602256084" duration="333000" />
       <workItem from="1722602616068" duration="1533000" />
       <workItem from="1724536582842" duration="16000" />
-      <workItem from="1724588198081" duration="2656000" />
+      <workItem from="1724588198081" duration="4456000" />
     </task>
     <servers />
   </component>

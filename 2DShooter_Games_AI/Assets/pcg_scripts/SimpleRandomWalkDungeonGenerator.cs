@@ -8,10 +8,10 @@ public class SimpleRandomWalkDungeonGenerator : AbstractDungeonGenerator
 {
     
     [SerializeField] 
-    private SimpleRandomWalkSO _randomWalkSo;
+    protected SimpleRandomWalkSO _randomWalkSo;
     protected override void RunProceduralGeneration()
     {
-        HashSet<Vector2Int> floorPositions = RunRandomWalk();
+        HashSet<Vector2Int> floorPositions = RunRandomWalk(_randomWalkSo, startPosition);
 
         foreach (var postion in floorPositions)
         {
@@ -22,17 +22,17 @@ public class SimpleRandomWalkDungeonGenerator : AbstractDungeonGenerator
         WallGenerator.CreateWalls(floorPositions, _tilemapVisualizer);
     }
 
-    protected HashSet<Vector2Int> RunRandomWalk()
+    protected HashSet<Vector2Int> RunRandomWalk(SimpleRandomWalkSO randomWalkSo, Vector2Int position)
     {
-        var currentPosition = startPosition;
+        var currentPosition = position;
 
         HashSet<Vector2Int> floorPositions = new HashSet<Vector2Int>();
 
-        for (int i = 0; i < _randomWalkSo.iterations; i++)
+        for (int i = 0; i < randomWalkSo.iterations; i++)
         {
-            var path = PCGAlgorithms.SimpleRandomWalk(currentPosition, _randomWalkSo.walkLength);
+            var path = PCGAlgorithms.SimpleRandomWalk(currentPosition, randomWalkSo.walkLength);
             floorPositions.UnionWith(path);
-            if (_randomWalkSo.startRandomlyEachIteration)
+            if (randomWalkSo.startRandomlyEachIteration)
                 currentPosition = floorPositions.ElementAt(Random.Range(0, floorPositions.Count));
         }
 

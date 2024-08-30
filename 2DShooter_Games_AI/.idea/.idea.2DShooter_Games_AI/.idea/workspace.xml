@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="" />
+    <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/urp/URP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/urp/URP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,6 +109,7 @@
       <workItem from="1724536582842" duration="16000" />
       <workItem from="1724588198081" duration="6840000" />
       <workItem from="1724768944062" duration="5954000" />
+      <workItem from="1725053775219" duration="462000" />
     </task>
     <servers />
   </component>

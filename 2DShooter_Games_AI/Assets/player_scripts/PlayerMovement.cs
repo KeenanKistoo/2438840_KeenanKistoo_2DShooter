@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Button Inputs:")]
     private float _hInput;
     private float _vInput;
     private float _speed = 3f;
     private bool _isFacingRight;
-    
 
+    [Header("GameObject's Rigibody:")]
     [SerializeField] private Rigidbody2D rb;
 
     private void Start()
@@ -37,4 +38,6 @@ public class PlayerMovement : MonoBehaviour
         localScale.x *= -1f;
         transform.localScale = localScale;
     }
+
+   
 }

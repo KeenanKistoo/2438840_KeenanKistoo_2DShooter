@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="" />
+    <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/ResetPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/ResetPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,9 +23,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/data/SimpleRandomWalkSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/editor/RandomDungeonGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/AbstractDungeonGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGeneration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/TilemapVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/WallGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/player_scripts/FlashlightBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/TileDragAndDrop.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -53,7 +59,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1\2DShooter_Games_AI.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="C:\GitHubWork\2438840_KeenanKistoo_2DShooter\2DShooter_Games_AI\2438840_KeenanKistoo_PCG_Attempt1" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -112,6 +118,7 @@
       <workItem from="1724588198081" duration="6840000" />
       <workItem from="1724768944062" duration="5954000" />
       <workItem from="1725053775219" duration="1057000" />
+      <workItem from="1726132795980" duration="657000" />
     </task>
     <servers />
   </component>

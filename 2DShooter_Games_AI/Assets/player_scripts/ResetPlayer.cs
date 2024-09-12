@@ -7,6 +7,7 @@ public class ResetPlayer : MonoBehaviour
 {
     [SerializeField] private GameObject _player;
 
+    
     public void Reset()
     {
         //print("Is working");

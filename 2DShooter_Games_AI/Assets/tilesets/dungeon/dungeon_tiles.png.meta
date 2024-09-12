@@ -3071,11 +3071,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dungeon_tiles_141
+      name: wall_test
       rect:
         serializedVersion: 2
         x: 272
-        y: 224
+        y: 228
         width: 16
         height: 16
       alignment: 0
@@ -5751,7 +5751,6 @@ TextureImporter:
       dungeon_tiles_139: 1606403051
       dungeon_tiles_14: 1641688065
       dungeon_tiles_140: 1473337195
-      dungeon_tiles_141: -1044320792
       dungeon_tiles_142: 1962095029
       dungeon_tiles_143: 313884390
       dungeon_tiles_144: -1322959262
@@ -5950,6 +5949,7 @@ TextureImporter:
       dungeon_tiles_97: 68537649
       dungeon_tiles_98: 802095198
       dungeon_tiles_99: -252516758
+      wall_test: -1044320792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

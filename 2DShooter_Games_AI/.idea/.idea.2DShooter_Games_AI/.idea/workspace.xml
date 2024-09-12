@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/boot.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/sharedassets0.assets.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
-    </list>
+    <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +111,7 @@
       <workItem from="1724536582842" duration="16000" />
       <workItem from="1724588198081" duration="6840000" />
       <workItem from="1724768944062" duration="5954000" />
-      <workItem from="1725053775219" duration="1055000" />
+      <workItem from="1725053775219" duration="1057000" />
     </task>
     <servers />
   </component>

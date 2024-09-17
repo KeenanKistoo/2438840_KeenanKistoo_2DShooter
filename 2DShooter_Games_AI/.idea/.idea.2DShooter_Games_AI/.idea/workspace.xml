@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/boot.config" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/boot.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/resources.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/2438840_KeenanKistoo_PCG_Attempt1/2DShooter_Games_AI_Data/sharedassets0.assets.resS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/ResetPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/ResetPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/tilesets/4 Walls, Floor &amp; Doors.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/tilesets/4 Walls, Floor &amp; Doors.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/tilesets/dungeon/Tilemap/DungeonTilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/tilesets/dungeon/Tilemap/DungeonTilemap.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +30,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/data/SimpleRandomWalkSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/editor/RandomDungeonGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/light_gen_scripts/LightGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/AbstractDungeonGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/TilemapVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/WallGenerator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,7 +55,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -119,6 +128,7 @@
       <workItem from="1724768944062" duration="5954000" />
       <workItem from="1725053775219" duration="1057000" />
       <workItem from="1726132795980" duration="657000" />
+      <workItem from="1726569077364" duration="3770000" />
     </task>
     <servers />
   </component>

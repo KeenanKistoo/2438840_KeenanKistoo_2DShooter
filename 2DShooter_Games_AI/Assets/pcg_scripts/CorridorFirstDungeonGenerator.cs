@@ -11,6 +11,8 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
     [SerializeField]
     [Range(0.1f,1f)]
     private float roomPercent = 0.8f;
+
+    [SerializeField] private LightGenerator _lightGenerator;
     protected override void RunProceduralGeneration()
     {
         CorridorFirstDungeonGeneration();
@@ -43,6 +45,8 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         // Visualize the dungeon layout
         _tilemapVisualizer.PaintFloorTiles(floorPositions);
         WallGenerator.CreateWalls(floorPositions, _tilemapVisualizer);
+
+        _lightGenerator.LightGeneration(floorPositions);
     }
 
 
@@ -160,12 +164,13 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         return roomPositions;
     }
 
-    private List<List<Vector2Int>> CreateCorridors(HashSet<Vector2Int> floorPositions, HashSet<Vector2Int> potentialRoomPositions)
+    private List<List<Vector2Int>> CreateCorridors(HashSet<Vector2Int> floorPositions,
+        HashSet<Vector2Int> potentialRoomPositions)
     {
         var currentPosition = startPosition;
         potentialRoomPositions.Add(currentPosition);
         List<List<Vector2Int>> corridors = new List<List<Vector2Int>>();
-        
+
         for (int i = 0; i < corridorCount; i++)
         {
             var corridor = PCGAlgorithms.RandomWalkCorridor(currentPosition, corridorLength);

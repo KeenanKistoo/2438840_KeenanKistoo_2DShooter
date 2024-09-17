@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - FlashLightObject
+  - TorchParent
   layers:
   - Default
   - TransparentFX

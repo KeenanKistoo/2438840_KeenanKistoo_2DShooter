@@ -18,13 +18,13 @@ public class LightGenerator : MonoBehaviour
         _torchParent = GameObject.FindGameObjectWithTag("TorchParent");
     }
 
-    public void LightGeneration(HashSet<Vector2Int> _floorPositions)
+    /*public void LightGeneration(HashSet<Vector2Int> _floorPositions)
     {
         
         foreach (var position in _floorPositions)
         {
             int ran = Random.Range(0, 20);
-
+            lightTracker = _floorPositions.Count;
             if (lightTracker > 0)
             {
                 for (int i = 0; i < setLightValues.Length; i++)
@@ -43,5 +43,32 @@ public class LightGenerator : MonoBehaviour
                 //print("Complete");
             }
         }
+    }*/
+    
+    public void LightGeneration(HashSet<Vector2Int> _floorPositions)
+    {
+        
+        foreach (var position in _floorPositions)
+        {
+            int ran = Random.Range(0, 20);
+            lightTracker = _floorPositions.Count;
+            if (lightTracker > 0)
+            {
+                for (int i = 0; i < setLightValues.Length; i++)
+                {
+                    
+                        GameObject torch = Instantiate(_torchPrefab, _torchParent.transform, false);
+                        torch.transform.position = new Vector3(position.x, position.y, 0);
+                        //print(position);
+                        lightTracker--;
+                        //print(ran);
+                    
+                }
+            }else if (lightTracker <= 0)
+            {
+                //print("Complete");
+            }
+        }
     }
+    
 }

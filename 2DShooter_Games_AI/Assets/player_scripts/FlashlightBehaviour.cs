@@ -9,16 +9,23 @@ public class FlashlightBehaviour : MonoBehaviour
     {
         FlashlightRotation();
     }
-    
-    public void FlashlightRotation()
+
+    private void FlashlightRotation()
     {
+        // Step 1: Get the mouse position in world space
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0;
 
-        Vector3 _direction = mousePos - transform.position;
+        // Step 2: Set the Z position to match the object's Z position (usually 0 in 2D)
+        mousePos.z = transform.position.z;
 
-        float _angle = Mathf.Atan2(_direction.y, _direction.x) * Mathf.Rad2Deg;
+        // Step 3: Calculate the direction vector from the flashlight object to the mouse
+        Vector3 direction = mousePos - transform.position;
+
+        // Step 4: Calculate the angle in degrees for 2D rotation
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        // Step 5: Apply the rotation to the flashlight object (only affecting the Z axis)
+        transform.rotation = Quaternion.Euler(0f, 0f, angle - 75);
         
-        transform.rotation = Quaternion.Euler(0f,0f, _angle);
     }
 }

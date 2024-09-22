@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/light_gen_scripts/LightGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/light_gen_scripts/LightGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/ResetPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/ResetPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/torch_assets/torchlight_prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/torch_assets/torchlight_prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +122,9 @@
       <workItem from="1725053775219" duration="1057000" />
       <workItem from="1726132795980" duration="657000" />
       <workItem from="1726569077364" duration="3770000" />
-      <workItem from="1726595810627" duration="1400000" />
+      <workItem from="1726595810627" duration="1827000" />
+      <workItem from="1726844806576" duration="324000" />
+      <workItem from="1726952348913" duration="3379000" />
     </task>
     <servers />
   </component>

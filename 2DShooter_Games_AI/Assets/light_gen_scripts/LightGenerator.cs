@@ -12,61 +12,38 @@ public class LightGenerator : MonoBehaviour
 
     [SerializeField] private GameObject _torchPrefab;
     [SerializeField] private GameObject _torchParent;
+    [SerializeField] private GameObject _messagePanel;
 
     private void Start()
     {
         _torchParent = GameObject.FindGameObjectWithTag("TorchParent");
+        _messagePanel = GameObject.FindWithTag("MessagePanel");
     }
-
-    /*public void LightGeneration(HashSet<Vector2Int> _floorPositions)
-    {
-        
-        foreach (var position in _floorPositions)
-        {
-            int ran = Random.Range(0, 20);
-            lightTracker = _floorPositions.Count;
-            if (lightTracker > 0)
-            {
-                for (int i = 0; i < setLightValues.Length; i++)
-                {
-                    if (ran == setLightValues[i])
-                    {
-                        GameObject torch = Instantiate(_torchPrefab, _torchParent.transform, false);
-                        torch.transform.position = new Vector3(position.x, position.y, 0);
-                        //print(position);
-                        lightTracker--;
-                        //print(ran);
-                    }
-                }
-            }else if (lightTracker <= 0)
-            {
-                //print("Complete");
-            }
-        }
-    }*/
     
     public void LightGeneration(HashSet<Vector2Int> _floorPositions)
     {
-        
+        lightTracker = _floorPositions.Count;
         foreach (var position in _floorPositions)
         {
-            int ran = Random.Range(0, 20);
-            lightTracker = _floorPositions.Count;
+            
+            //print(lightTracker);
             if (lightTracker > 0)
             {
                 for (int i = 0; i < setLightValues.Length; i++)
                 {
-                    
+                        lightTracker--;
                         GameObject torch = Instantiate(_torchPrefab, _torchParent.transform, false);
                         torch.transform.position = new Vector3(position.x, position.y, 0);
                         //print(position);
-                        lightTracker--;
+                        //print("Track No: " + lightTracker);
                         //print(ran);
                     
                 }
             }else if (lightTracker <= 0)
             {
                 //print("Complete");
+                _messagePanel.SetActive(false);
+                break;
             }
         }
     }

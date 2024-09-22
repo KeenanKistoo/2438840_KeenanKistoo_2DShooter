@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ResetPlayer : MonoBehaviour
 {
-    [SerializeField] private GameObject _player;
+    [SerializeField] private GameObject _player;   
 
     
     public void Reset()

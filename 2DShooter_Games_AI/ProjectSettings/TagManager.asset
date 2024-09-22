@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FlashLightObject
   - TorchParent
+  - MessagePanel
   layers:
   - Default
   - TransparentFX

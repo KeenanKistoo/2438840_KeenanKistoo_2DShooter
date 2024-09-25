@@ -26,7 +26,7 @@ public class LightGenerator : MonoBehaviour
         foreach (var position in _floorPositions)
         {
             
-            //print(lightTracker);
+            print(lightTracker);
             if (lightTracker > 0)
             {
                 for (int i = 0; i < setLightValues.Length; i++)

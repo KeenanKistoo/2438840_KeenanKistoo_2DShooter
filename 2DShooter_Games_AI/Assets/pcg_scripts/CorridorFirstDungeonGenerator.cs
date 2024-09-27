@@ -26,6 +26,16 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
     [SerializeField] private Tilemap _floorTilemap;
 
+    [SerializeField] private ItemDistribution _itemDistribution;
+    
+    [SerializeField]
+    private List<Vector2Int> floorPositionsList;
+
+    private void Start()
+    {
+        _itemDistribution = GameObject.FindGameObjectWithTag("ItemController").GetComponent<ItemDistribution>();
+    }
+
 
     // Main entry point for procedural generation - calls the dungeon generation method
     protected override void RunProceduralGeneration()
@@ -59,6 +69,12 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
         // Merge the floor positions from rooms and corridors
         floorPositions.UnionWith(roomPositions);
+        
+        // Convert HashSet to List for Inspector display
+        floorPositionsList = floorPositions.ToList(); // This will allow you to see the floor positions in the Inspector
+
+        // Finalize floor positions for item distribution
+        _itemDistribution.floorPos = new List<Vector2Int>(floorPositions);
 
         // Visualize the dungeon floor tiles
         _tilemapVisualizer.PaintFloorTiles(floorPositions);
@@ -66,10 +82,10 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         WallGenerator.CreateWalls(floorPositions, _tilemapVisualizer);
 
         //Place my chests
-        PlaceChest();
+        //PlaceChest();
         
         //Place Torches
-        _lightGenerator.LightGeneration(potentialRoomPositions);
+        //_lightGenerator.LightGeneration(potentialRoomPositions);
     }
 
     // Expands the corridor size by 3x3 around each point of the original corridor

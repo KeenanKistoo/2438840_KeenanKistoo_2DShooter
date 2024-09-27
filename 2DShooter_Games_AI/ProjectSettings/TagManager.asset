@@ -8,6 +8,7 @@ TagManager:
   - TorchParent
   - MessagePanel
   - Enemy
+  - ItemController
   layers:
   - Default
   - TransparentFX

@@ -28,5 +28,10 @@ public class ChestBehaviour : MonoBehaviour
         {
             _animator.SetTrigger("OpenChest");
         }
+
+        if (coll.gameObject)
+        {
+            print("Collision");
+        }
     }
 }

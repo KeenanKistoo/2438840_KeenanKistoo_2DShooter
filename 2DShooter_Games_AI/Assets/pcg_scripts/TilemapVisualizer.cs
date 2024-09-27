@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Random = UnityEngine.Random;
 
 public class TilemapVisualizer : MonoBehaviour
 {
@@ -10,6 +12,34 @@ public class TilemapVisualizer : MonoBehaviour
 
     [SerializeField]
     private TileBase floorTile, wallTop;
+
+    [SerializeField] 
+    private TileBase wallClean, wallRock;
+
+    public bool rockTypeControl;
+
+
+    private void Start()
+    {
+        rockTypeControl = false;
+    }
+
+    private void Update()
+    {
+        if (rockTypeControl)
+        {
+            int ranNum = Random.Range(0, 25);
+            if (ranNum % 5 == 0)
+            {
+                floorTile = wallRock;
+            }
+            else
+            {
+                floorTile = wallClean;
+            }
+            
+        }
+    }
 
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
     {
@@ -20,6 +50,16 @@ public class TilemapVisualizer : MonoBehaviour
     {
         foreach (var position in positions)
         {
+            int randomTileNum = Random.Range(0, 45);
+
+            if (randomTileNum % 10 == 0)
+            {
+                tile = wallRock;
+            }
+            else
+            {
+                tile = wallClean;
+            }
             PaintSingleTile(tilemap, tile, position);
         }
     }
@@ -40,5 +80,12 @@ public class TilemapVisualizer : MonoBehaviour
     public void PaintSingleBasicWall(Vector2Int position)
     {
         PaintSingleTile(wallTilemap, wallTop, position);
+    }
+
+    public IEnumerator CheckWalls()
+    {
+        rockTypeControl = true;
+        yield return new WaitForSeconds(5f);
+        rockTypeControl = false;
     }
 }

@@ -68,7 +68,7 @@ public class ItemDistribution : MonoBehaviour
                 return;  // Stop further processing when all desired items are placed
             }
 
-            int ranNum = UnityEngine.Random.Range(0, 50);
+            int ranNum = UnityEngine.Random.Range(0, 80);
             if (ranNum == 19)
             {
                 switch (_currentItem)

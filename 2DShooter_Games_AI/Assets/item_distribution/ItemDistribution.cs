@@ -80,7 +80,7 @@ public class ItemDistribution : MonoBehaviour
                             GameObject chestInstance = Instantiate(_chest, new Vector3(pos.x, pos.y, 0),
                                 Quaternion.identity, _chestParent.transform);
         
-                            print("Added Chest at " + pos);
+                            //print("Added Chest at " + pos);
                         }else if (desChest <= 0)
                         {
                             _currentItem = ItemType.Enemy;
@@ -92,7 +92,7 @@ public class ItemDistribution : MonoBehaviour
                             desEnemy--;
                             GameObject enemyInstance = Instantiate(_enemy, new Vector3(pos.x, pos.y, 0),
                                 Quaternion.identity, _enemyParent.transform);
-                            print("Added Enemy at " + pos);
+                            //print("Added Enemy at " + pos);
                         }else if (desEnemy <= 0)
                         {
                             _currentItem = ItemType.Torch;
@@ -104,7 +104,7 @@ public class ItemDistribution : MonoBehaviour
                             desTorch--;
                             GameObject torchInstance = Instantiate(_torch, new Vector3(pos.x, pos.y, 0),
                                 Quaternion.identity, _torchParent.transform);
-                            print("Added Torch at " + pos);
+                            //print("Added Torch at " + pos);
                         }else if (desTorch <= 0)
                         {
                             _currentItem = ItemType.Node;
@@ -116,7 +116,7 @@ public class ItemDistribution : MonoBehaviour
                             desNode--;
                             GameObject nodeInstance = Instantiate(_node, new Vector3(pos.x, pos.y, 0),
                                 Quaternion.identity, _nodeParent.transform);
-                            print("Added Torch at " + pos);
+                            //print("Added Torch at " + pos);
                         }else if (desNode <= 0)
                         {
                             _needSetup = false;

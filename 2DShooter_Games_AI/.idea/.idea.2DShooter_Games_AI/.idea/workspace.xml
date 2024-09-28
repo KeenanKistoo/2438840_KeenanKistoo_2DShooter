@@ -9,9 +9,9 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/enemy_scripts/enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/enemy_scripts/enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/item_distribution/ItemDistribution.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/item_distribution/ItemDistribution.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/item_distribution/node.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/item_distribution/node.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pcg_scripts/TilemapVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pcg_scripts/TilemapVisualizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/tilesets/dungeon/Tilemap/DungeonTilemap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/tilesets/dungeon/Tilemap/DungeonTilemap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ChestScripts/ChestBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/data/SimpleRandomWalkSO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/editor/RandomDungeonGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/enemy_scripts/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/item_distribution/ItemDistribution.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/light_gen_scripts/LightGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/AbstractDungeonGenerator.cs" root0="FORCE_HIGHLIGHTING" />

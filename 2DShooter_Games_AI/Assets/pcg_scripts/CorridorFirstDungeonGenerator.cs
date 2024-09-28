@@ -75,7 +75,7 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         floorPositionsList = floorPositions.ToList(); // This will allow you to see the floor positions in the Inspector
 
         // Finalize floor positions for item distribution
-        //_itemDistribution.floorPos = new List<Vector2Int>(floorPositions);
+        _itemDistribution.floorPos = new List<Vector2Int>(floorPositions);
 
         // Visualize the dungeon floor tiles
         _tilemapVisualizer.PaintFloorTiles(floorPositions);
@@ -89,6 +89,8 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
 
         //Place Torches
         //_lightGenerator.LightGeneration(potentialRoomPositions);
+
+        _itemDistribution._needSetup = true;
     }
 
     // Expands the corridor size by 3x3 around each point of the original corridor

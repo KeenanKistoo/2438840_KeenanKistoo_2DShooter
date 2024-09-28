@@ -9,6 +9,7 @@ TagManager:
   - MessagePanel
   - Enemy
   - ItemController
+  - Nodes
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - NodeLayer
   - 
   - 
   - 

@@ -31,6 +31,7 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
     [SerializeField]
     private List<Vector2Int> floorPositionsList;
 
+    public Dictionary<Vector2Int, bool> floorData = new Dictionary<Vector2Int, bool>();
     private void Start()
     {
         _itemDistribution = GameObject.FindGameObjectWithTag("ItemController").GetComponent<ItemDistribution>();
@@ -73,6 +74,13 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         
         // Convert HashSet to List for Inspector display
         floorPositionsList = floorPositions.ToList(); // This will allow you to see the floor positions in the Inspector
+        
+        //Creating Dictionary for A*
+        foreach (var postion in floorPositionsList)
+        {
+                floorData.Add(postion, true);
+                //print("Floor Data Index: " + floorData.Count);
+        }
 
         // Finalize floor positions for item distribution
         _itemDistribution.floorPos = new List<Vector2Int>(floorPositions);
@@ -81,8 +89,12 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         _tilemapVisualizer.PaintFloorTiles(floorPositions);
         // Generate walls around the floor tiles
         WallGenerator.CreateWalls(floorPositions, _tilemapVisualizer);
-
         
+        //Item Setup
+        _itemDistribution._needSetup = true;
+
+        StartCoroutine(WaitForData());
+
 
         //Place my chests
         //PlaceChest();
@@ -90,7 +102,19 @@ public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         //Place Torches
         //_lightGenerator.LightGeneration(potentialRoomPositions);
 
-        _itemDistribution._needSetup = true;
+
+    }
+
+    private IEnumerator WaitForData()
+    {
+        yield return new WaitForSeconds(5f);
+        
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.GetComponent<EnemyMovementData>().GetEnvironment(floorData);
+            enemy.GetComponent<EnemyMovementData>()._activate = true;
+        }
     }
 
     // Expands the corridor size by 3x3 around each point of the original corridor

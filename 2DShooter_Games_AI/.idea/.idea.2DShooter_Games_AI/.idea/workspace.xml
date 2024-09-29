@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/enemy_scripts/EnemyBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/enemy_scripts/EnemyBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/enemy_scripts/enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/enemy_scripts/enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/pcg_scripts/CorridorFirstDungeonGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_scripts/EnemyMovementData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/enemy_scripts/EnemyMovementData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

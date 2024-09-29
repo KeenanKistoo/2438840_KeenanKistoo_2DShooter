@@ -35,9 +35,12 @@ public class EnemyMovementData : MonoBehaviour
 
    [SerializeField] private float timer;
 
+   [SerializeField] private bool _isChasing;
+
    private void Start()
    {
       _activate = false;
+      _isChasing = false;
       _enemyBehave = EnemyBehave.Wait;
       timer = 0;
    }
@@ -55,12 +58,19 @@ public class EnemyMovementData : MonoBehaviour
             SelectNode();
             break;
          case EnemyBehave.Loiter:
-            Timer();
-            MoveTowardsNode();
-            print("Loitering");
+            if (!_isChasing)
+            {
+               Timer();
+               MoveTowardsNode();
+               print("Loitering");
+            }else if (_isChasing)
+            {
+               _enemyBehave = EnemyBehave.Chase;
+            }
             break;
          case EnemyBehave.Chase:
-            print("Chase Player");
+            //print("Chase Player");
+            ChasePlayer();
             //ChasePlayer
             break;
          case EnemyBehave.Freeze:
@@ -77,11 +87,28 @@ public class EnemyMovementData : MonoBehaviour
 
    private void MoveTowardsNode()
    {
-      transform.position = Vector2.Lerp(transform.position, 
-         (Vector2)targetPos, (Time.deltaTime * timeVariable));
+         // Ensure constant movement towards the target
+         transform.position = Vector2.MoveTowards(transform.position, targetPos,
+            timeVariable * Time.deltaTime);
    }
    private void SelectNode()
    {
+      nearbyColl = Physics2D.OverlapCircleAll(transform.position, 3f);
+
+      for (int i = 0; i < nearbyColl.Length; i++)
+      {
+         print(nearbyColl[i].tag);
+         if (nearbyColl[i].tag == "Player")
+         {
+            _isChasing = true;
+            _enemyBehave = EnemyBehave.Chase;
+            print("Initiate Chase");
+         }
+         else
+         {
+            _enemyBehave = EnemyBehave.Loiter;
+         }
+      }
       // Get the keys (positions) from the dictionary as a List
       List<Vector2Int> keys = new List<Vector2Int>(environment.Keys);
 
@@ -98,26 +125,11 @@ public class EnemyMovementData : MonoBehaviour
          targetPos = (Vector2)randomPosition;
       }
 
-      nearbyColl = Physics2D.OverlapCircleAll(transform.position, 3f);
-
-      for (int i = 0; i < nearbyColl.Length; i++)
-      {
-         if (nearbyColl[i].tag == "Player")
-         {
-            _enemyBehave = EnemyBehave.Chase;
-            print("Chase");
-         }
-         else
-         {
-            _enemyBehave = EnemyBehave.Loiter;
-         }
-      }
-
       timer = 0;
    }
 
-   public void Timer()
-   {
+   private void Timer(){
+    
       timer += Time.deltaTime;
 
       if (timer >= 4)
@@ -131,5 +143,12 @@ public class EnemyMovementData : MonoBehaviour
       yield return new WaitForSeconds(5f);
 
       _enemyBehave = EnemyBehave.Search;
+   }
+
+   private void ChasePlayer()
+   {
+      targetPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+      
+      MoveTowardsNode();
    }
 }

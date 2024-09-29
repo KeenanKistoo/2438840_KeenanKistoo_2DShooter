@@ -50,11 +50,11 @@ public class EnemyMovementData : MonoBehaviour
       switch (_enemyBehave)
       {
          case EnemyBehave.Wait:
-            print("Waiting");
+            //print("Waiting");
             StartCoroutine(Stall());
             break;
          case EnemyBehave.Search:
-            print("Searching");
+            //print("Searching");
             SelectNode();
             break;
          case EnemyBehave.Loiter:
@@ -62,7 +62,7 @@ public class EnemyMovementData : MonoBehaviour
             {
                Timer();
                MoveTowardsNode();
-               print("Loitering");
+               //print("Loitering");
             }else if (_isChasing)
             {
                _enemyBehave = EnemyBehave.Chase;
@@ -74,7 +74,7 @@ public class EnemyMovementData : MonoBehaviour
             //ChasePlayer
             break;
          case EnemyBehave.Freeze:
-            print("Frozen");
+            print("Frozen For Time");
             //Player Does Not Move
             break;
       }
@@ -97,12 +97,12 @@ public class EnemyMovementData : MonoBehaviour
 
       for (int i = 0; i < nearbyColl.Length; i++)
       {
-         print(nearbyColl[i].tag);
+         //print(nearbyColl[i].tag);
          if (nearbyColl[i].tag == "Player")
          {
             _isChasing = true;
             _enemyBehave = EnemyBehave.Chase;
-            print("Initiate Chase");
+            //print("Initiate Chase");
          }
          else
          {
@@ -150,5 +150,11 @@ public class EnemyMovementData : MonoBehaviour
       targetPos = GameObject.FindGameObjectWithTag("Player").transform.position;
       
       MoveTowardsNode();
+   }
+
+   public void Freeze()
+   {
+      _enemyBehave = EnemyBehave.Freeze;
+      print("Frozen");
    }
 }

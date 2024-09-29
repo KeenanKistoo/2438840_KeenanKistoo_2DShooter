@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FlashlightBehaviour : MonoBehaviour
@@ -27,5 +28,14 @@ public class FlashlightBehaviour : MonoBehaviour
         // Step 5: Apply the rotation to the flashlight object (only affecting the Z axis)
         transform.rotation = Quaternion.Euler(0f, 0f, angle - 75);
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D trigger)
+    {
+        if (trigger.gameObject.tag == "Enemy")
+        {
+            EnemyMovementData _enemy = trigger.gameObject.GetComponent<EnemyMovementData>();
+            _enemy.Freeze();
+        }
     }
 }

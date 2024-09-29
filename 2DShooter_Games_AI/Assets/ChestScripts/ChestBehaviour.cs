@@ -18,12 +18,14 @@ public class ChestBehaviour : MonoBehaviour
     [Header("Inventory Controller:")] 
     [SerializeField]
     private Inventory _inventory;
+    public bool key;
     
 
     private void Awake()
     {
         _player = GameObject.FindWithTag("Player");
         _animator = this.gameObject.GetComponent<Animator>();
+        _inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
     }
 
     private void OnTriggerEnter2D(Collider2D coll)
@@ -31,6 +33,15 @@ public class ChestBehaviour : MonoBehaviour
         if (coll.gameObject == _player)
         {
             _animator.SetTrigger("OpenChest");
+
+            if (key)
+            {
+                _inventory.keyCollected++;
+            }
+            else if(!key)
+            {
+                _inventory.CollectWood(30);
+            }
         }
 
         if (coll.gameObject)

@@ -172,6 +172,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _activate: 0
-  timeVariable: 0.05
+  timeVariable: 0.8
   isMoving: 0
+  _startMove: 0
   targetPos: {x: 0, y: 0}
+  nearbyColl: []
+  _enemyBehave: 0
+  timer: 0
+  _isChasing: 0

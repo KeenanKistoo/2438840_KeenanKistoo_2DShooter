@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8036703046931554994}
   m_Layer: 0
   m_Name: chest_prefab
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,3 +169,4 @@ MonoBehaviour:
   _openAnim: {fileID: 0}
   _idleAnim: {fileID: 0}
   _animator: {fileID: 0}
+  _inventory: {fileID: 0}

@@ -74,6 +74,7 @@ public class EnemyMovementData : MonoBehaviour
             //ChasePlayer
             break;
          case EnemyBehave.Freeze:
+            Timer();
             print("Frozen For Time");
             //Player Does Not Move
             break;
@@ -154,6 +155,7 @@ public class EnemyMovementData : MonoBehaviour
 
    public void Freeze()
    {
+      timer = 0;
       _enemyBehave = EnemyBehave.Freeze;
       print("Frozen");
    }

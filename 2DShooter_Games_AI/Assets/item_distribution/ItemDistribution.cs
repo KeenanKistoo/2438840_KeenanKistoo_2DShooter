@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = Unity.Mathematics.Random;
 
 public enum ItemType
 {
@@ -39,13 +40,19 @@ public class ItemDistribution : MonoBehaviour
     [SerializeField] private GameObject _enemyParent;
     [SerializeField] private GameObject _torchParent;
     [SerializeField] private GameObject _nodeParent;
+
+    [Header("Chest Elements:")] 
+    [SerializeField]
+    private Inventory _inventory;
+    public int chestKey;
     
     
     private void Start()
     {
         _currentItem = ItemType.Chest;
         _needSetup = false;
-        
+        chestKey = 0;
+
     }
 
 
@@ -83,6 +90,7 @@ public class ItemDistribution : MonoBehaviour
                             //print("Added Chest at " + pos);
                         }else if (desChest <= 0)
                         {
+                            ChestSetup();
                             _currentItem = ItemType.Enemy;
                         }
                         break;
@@ -125,6 +133,23 @@ public class ItemDistribution : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void ChestSetup()
+    {
+        GameObject[] chests = GameObject.FindGameObjectsWithTag("Chest");
+        
+        while (chestKey < _inventory.keyLvl)
+        {
+            int ranIndex = UnityEngine.Random.Range(0, chests.Length);
+            if (!chests[ranIndex].GetComponent<ChestBehaviour>().key)
+            {
+                chests[ranIndex].GetComponent<ChestBehaviour>().key = true;
+                chestKey++;
+            }
+        }
+        
+        
     }
     
 }

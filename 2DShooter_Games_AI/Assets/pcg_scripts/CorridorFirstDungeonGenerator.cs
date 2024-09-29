@@ -8,8 +8,8 @@ using UnityEngine.Tilemaps;
 public class CorridorFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
 {
     // Corridor length and count to determine dungeon generation parameters
-    [SerializeField]
-    private int corridorLength = 14, corridorCount = 5;
+    
+    public int corridorLength, corridorCount;
 
     // Percentage of potential rooms that will actually be created
     [SerializeField]

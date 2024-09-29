@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - ItemController
   - Nodes
+  - Inventory
   layers:
   - Default
   - TransparentFX

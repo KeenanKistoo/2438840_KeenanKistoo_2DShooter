@@ -14,6 +14,10 @@ public class ChestBehaviour : MonoBehaviour
 
     [Header("Animator:")] 
     [SerializeField] private Animator _animator;
+
+    [Header("Inventory Controller:")] 
+    [SerializeField]
+    private Inventory _inventory;
     
 
     private void Awake()
@@ -22,7 +26,7 @@ public class ChestBehaviour : MonoBehaviour
         _animator = this.gameObject.GetComponent<Animator>();
     }
 
-    private void OnCollisionEnter2D(Collision2D coll)
+    private void OnTriggerEnter2D(Collider2D coll)
     {
         if (coll.gameObject == _player)
         {

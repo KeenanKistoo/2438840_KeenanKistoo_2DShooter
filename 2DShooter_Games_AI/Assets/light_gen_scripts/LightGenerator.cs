@@ -18,6 +18,7 @@ public class LightGenerator : MonoBehaviour
     {
         _torchParent = GameObject.FindGameObjectWithTag("TorchParent");
         _messagePanel = GameObject.FindWithTag("MessagePanel");
+        StartCoroutine(Stall());
     }
     
     public void LightGeneration(HashSet<Vector2Int> _floorPositions)
@@ -45,6 +46,16 @@ public class LightGenerator : MonoBehaviour
                 _messagePanel.SetActive(false);
                 break;
             }
+        }
+    }
+
+    private IEnumerator Stall()
+    {
+        yield return new WaitForSeconds(5f);
+
+        if (_messagePanel.activeInHierarchy)
+        {
+            _messagePanel.SetActive(false);
         }
     }
     

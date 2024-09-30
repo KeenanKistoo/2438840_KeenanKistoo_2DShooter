@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ChestBehaviour : MonoBehaviour
@@ -40,6 +41,8 @@ public class ChestBehaviour : MonoBehaviour
 
             if (key)
             {
+                _inventory.FoundKey();
+                StartCoroutine(_inventory.KeyText());
                 _inventory.keyCollected++;
             }
             else if(!key)

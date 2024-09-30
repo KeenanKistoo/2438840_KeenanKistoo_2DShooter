@@ -49,10 +49,16 @@ public class EnemyMovementData : MonoBehaviour
    [Header("Player")] [SerializeField] private PlayerMovement _player;
 
    [Header("Win Conditions")] public EndGameSounds _endGame;
+
+   [SerializeField] private GameObject messagePanel;
+
+   [SerializeField] private bool checkedAlready;
    
 
    private void Start()
    {
+      messagePanel = GameObject.FindGameObjectWithTag("MessagePanel");
+      checkedAlready = false;
       _activate = false;
       _isChasing = false;
       _enemyBehave = EnemyBehave.Wait;
@@ -65,6 +71,12 @@ public class EnemyMovementData : MonoBehaviour
    {
       if (_player.playerReady)
       {
+         if (messagePanel.activeInHierarchy == true  && !checkedAlready)
+         {
+            messagePanel.SetActive(false);
+            checkedAlready = true;
+         }
+
          switch (_enemyBehave)
          {
             case EnemyBehave.Wait:

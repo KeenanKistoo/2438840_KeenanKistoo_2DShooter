@@ -114,10 +114,6 @@ public class ItemDistribution : MonoBehaviour
                             GameObject torchInstance = Instantiate(_torch, new Vector3(pos.x, pos.y, 0),
                                 Quaternion.identity, _torchParent.transform);
                             
-                            if (messagePanel.activeInHierarchy == true)
-                            {
-                                messagePanel.SetActive(false);
-                            }
                             //print("Added Torch at " + pos);
                         }else if (desTorch <= 0)
                         {

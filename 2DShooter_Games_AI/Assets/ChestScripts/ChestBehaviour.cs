@@ -51,7 +51,7 @@ public class ChestBehaviour : MonoBehaviour
                 
                 _inventory.FoundKey();
                 StartCoroutine(_inventory.KeyText());
-                _inventory.keyCollected++;
+                
             }
             else if(!key)
             {

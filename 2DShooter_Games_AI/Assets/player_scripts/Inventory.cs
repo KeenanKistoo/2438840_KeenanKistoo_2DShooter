@@ -21,6 +21,8 @@ public class Inventory : MonoBehaviour
     public GameObject[] keys;
     public TMP_Text keyfoundTxt;
 
+    [Header("Endgame")] public EndGameSounds _endGame;
+
     private void Start()
     {
         keyCollected = 0;
@@ -50,6 +52,11 @@ public class Inventory : MonoBehaviour
             {
                 keys[i].SetActive(false);
             }
+        }
+
+        if (keyCollected >= keyLvl)
+        {
+            _endGame.win = true;
         }
     }
 

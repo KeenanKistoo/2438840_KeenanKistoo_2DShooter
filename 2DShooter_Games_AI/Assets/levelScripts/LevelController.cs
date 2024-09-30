@@ -35,7 +35,7 @@ public class LevelController : MonoBehaviour
         _gen.GenerateDungeon();
         yield return new WaitForSeconds(10f);
         
-        tutPanel.SetActive(true);
+        //tutPanel.SetActive(true);
         loadPane.SetActive(false);
         mainPanel.SetActive(false);
         

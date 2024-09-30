@@ -44,6 +44,11 @@ public class EnemyMovementData : MonoBehaviour
    public AudioClip _caught2;
    public AudioClip _win;
    public AudioClip _lose;
+
+
+   [Header("Player")] [SerializeField] private PlayerMovement _player;
+
+   [Header("Win Conditions")] public EndGameSounds _endGame;
    
 
    private void Start()
@@ -52,43 +57,49 @@ public class EnemyMovementData : MonoBehaviour
       _isChasing = false;
       _enemyBehave = EnemyBehave.Wait;
       timer = 0;
+      _player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
       //_audioSource = GameObject.FindGameObjectWithTag("AudioSource").GetComponent<AudioSource>();
    }
 
    private void Update()
    {
-      switch (_enemyBehave)
+      if (_player.playerReady)
       {
-         case EnemyBehave.Wait:
-            //print("Waiting");
-            StartCoroutine(Stall());
-            break;
-         case EnemyBehave.Search:
-            //print("Searching");
-            SelectNode();
-            break;
-         case EnemyBehave.Loiter:
-            if (!_isChasing)
-            {
-               Timer(4f);
-               MoveTowardsNode();
-               //print("Loitering");
-            }else if (_isChasing)
-            {
-               _enemyBehave = EnemyBehave.Chase;
-            }
-            break;
-         case EnemyBehave.Chase:
-            //print("Chase Player");
-            
-            ChasePlayer();
-            //ChasePlayer
-            break;
-         case EnemyBehave.Freeze: 
-            Timer(2f);
-            print("Frozen For Time");
-            //Player Does Not Move
-            break;
+         switch (_enemyBehave)
+         {
+            case EnemyBehave.Wait:
+               //print("Waiting");
+               StartCoroutine(Stall());
+               break;
+            case EnemyBehave.Search:
+               //print("Searching");
+               SelectNode();
+               break;
+            case EnemyBehave.Loiter:
+               if (!_isChasing)
+               {
+                  Timer(4f);
+                  MoveTowardsNode();
+                  //print("Loitering");
+               }
+               else if (_isChasing)
+               {
+                  _enemyBehave = EnemyBehave.Chase;
+               }
+
+               break;
+            case EnemyBehave.Chase:
+               //print("Chase Player");
+
+               ChasePlayer();
+               //ChasePlayer
+               break;
+            case EnemyBehave.Freeze:
+               Timer(2f);
+               print("Frozen For Time");
+               //Player Does Not Move
+               break;
+         }
       }
    }
 
@@ -138,6 +149,15 @@ public class EnemyMovementData : MonoBehaviour
       }
 
       timer = 0;
+   }
+
+   private void OnCollisionEnter2D(Collision2D other)
+   {
+      if (other.gameObject.tag == "Player" && _enemyBehave != EnemyBehave.Freeze)
+      {
+         _endGame = GameObject.FindGameObjectWithTag("EndGame").GetComponent<EndGameSounds>();
+         _endGame.lose = true;
+      }
    }
 
    private void Timer(float stopTime){

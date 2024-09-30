@@ -14,6 +14,7 @@ TagManager:
   - Chest
   - ChestParent
   - AudioSource
+  - EndGame
   layers:
   - Default
   - TransparentFX

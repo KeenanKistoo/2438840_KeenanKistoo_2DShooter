@@ -11,11 +11,14 @@ public class PlayerMovement : MonoBehaviour
     private float _speed = 3f;
     private bool _isFacingRight;
 
+    public bool playerReady;
+
     [Header("GameObject's Rigibody:")]
     [SerializeField] private Rigidbody2D rb;
 
     private void Start()
     {
+        playerReady = false;
         rb = this.gameObject.GetComponent<Rigidbody2D>();
         Move();
     }
@@ -25,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
     {
         _hInput = Input.GetAxisRaw("Horizontal");
         _vInput = Input.GetAxisRaw("Vertical");
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            playerReady = true;
+        }
     }
 
     private void FixedUpdate()

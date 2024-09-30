@@ -24,6 +24,12 @@ public class ChestBehaviour : MonoBehaviour
     [Header("Communication")] 
     [SerializeField] private GameObject addWood;
     [SerializeField] private GameObject subWood;
+
+    [Header("Audio Clips")] 
+    public AudioClip openChest;
+    public AudioClip KeyClip;
+    public AudioClip wood;
+    
     
 
     private void Awake()
@@ -49,6 +55,7 @@ public class ChestBehaviour : MonoBehaviour
             }
             else if(!key)
             {
+                
                 ChestComms _chestComms = GameObject.FindGameObjectWithTag("ChestParent").GetComponent<ChestComms>();
                 _chestComms.AddWoodComms();
                 _inventory.CollectWood(30);
@@ -64,4 +71,6 @@ public class ChestBehaviour : MonoBehaviour
             print("Collision");
         }
     }
+
+   
 }

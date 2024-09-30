@@ -45,7 +45,8 @@ public class ItemDistribution : MonoBehaviour
     [SerializeField]
     private Inventory _inventory;
     public int chestKey;
-    
+
+    public GameObject messagePanel;
     
     private void Start()
     {
@@ -112,6 +113,11 @@ public class ItemDistribution : MonoBehaviour
                             desTorch--;
                             GameObject torchInstance = Instantiate(_torch, new Vector3(pos.x, pos.y, 0),
                                 Quaternion.identity, _torchParent.transform);
+                            
+                            if (messagePanel.activeInHierarchy == true)
+                            {
+                                messagePanel.SetActive(false);
+                            }
                             //print("Added Torch at " + pos);
                         }else if (desTorch <= 0)
                         {

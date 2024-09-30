@@ -8,6 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ChestScripts/ChestBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ChestScripts/ChestBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/item_distribution/ItemDistribution.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/item_distribution/ItemDistribution.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/light_gen_scripts/LightGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/light_gen_scripts/LightGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/player_scripts/FlashlightBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player_scripts/GeneralSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player_scripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/player_scripts/PauseButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/torch_assets/EnemyTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/TileDragAndDrop.cs" root0="SKIP_HIGHLIGHTING" />
   </component>

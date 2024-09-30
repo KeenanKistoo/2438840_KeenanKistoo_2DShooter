@@ -46,5 +46,25 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = localScale;
     }
 
+    public void Respawn()
+    {
+        EnemyMovementData _data = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyMovementData>();
+        
+        List<Vector2Int> keys = new List<Vector2Int>(_data.environment.Keys);
+        
+        int index = UnityEngine.Random.Range(0, keys.Count);
+
+        // Get the random key (position) from the list
+        Vector2Int randomPosition = keys[index];
+
+        // Check if the selected position is walkable (if needed)
+        if (_data.environment[randomPosition])
+        {
+            //print(environment[randomPosition]);
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            player.transform.position = (Vector2)randomPosition;
+        }
+    }
+
    
 }

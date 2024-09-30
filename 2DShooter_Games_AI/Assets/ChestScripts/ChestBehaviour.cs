@@ -29,7 +29,8 @@ public class ChestBehaviour : MonoBehaviour
     public AudioClip openChest;
     public AudioClip KeyClip;
     public AudioClip wood;
-    
+
+    [Header("Opened Chest")] private bool opened;
     
 
     private void Awake()
@@ -37,12 +38,14 @@ public class ChestBehaviour : MonoBehaviour
         _player = GameObject.FindWithTag("Player");
         _animator = this.gameObject.GetComponent<Animator>();
         _inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+        opened = false;
     }
 
     private void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject == _player)
+        if (coll.gameObject == _player && !opened)
         {
+            opened = true;
             _animator.SetTrigger("OpenChest");
             AudioSource _src = this.gameObject.GetComponent<AudioSource>();
             _src.Play();

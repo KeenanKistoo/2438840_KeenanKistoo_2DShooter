@@ -60,7 +60,7 @@ public class EnemyMovementData : MonoBehaviour
          case EnemyBehave.Loiter:
             if (!_isChasing)
             {
-               Timer();
+               Timer(4f);
                MoveTowardsNode();
                //print("Loitering");
             }else if (_isChasing)
@@ -74,7 +74,7 @@ public class EnemyMovementData : MonoBehaviour
             //ChasePlayer
             break;
          case EnemyBehave.Freeze:
-            Timer();
+            Timer(2f);
             print("Frozen For Time");
             //Player Does Not Move
             break;
@@ -129,11 +129,11 @@ public class EnemyMovementData : MonoBehaviour
       timer = 0;
    }
 
-   private void Timer(){
+   private void Timer(float stopTime){
     
       timer += Time.deltaTime;
 
-      if (timer >= 4)
+      if (timer >= stopTime)
       {
          _enemyBehave = EnemyBehave.Search;
       }

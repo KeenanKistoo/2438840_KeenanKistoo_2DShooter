@@ -12,6 +12,7 @@ TagManager:
   - Nodes
   - Inventory
   - Chest
+  - ChestParent
   layers:
   - Default
   - TransparentFX

@@ -47,6 +47,13 @@ public class Inventory : MonoBehaviour
         keyCollected = 0;
         woodCount = 0;
     }
+
+    public IEnumerator NotEnough()
+    {
+        woodText.color = Color.red;
+        yield return new WaitForSeconds(1f);
+        woodText.color = Color.white;
+    }
     
     
 }

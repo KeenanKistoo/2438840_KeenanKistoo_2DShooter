@@ -33,8 +33,18 @@ public class TorchLight : MonoBehaviour
    {
       if (collision && Input.GetKey(KeyCode.Q))
       {
+         Inventory _inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+         
          //print("Working");
-         StartCoroutine(LightFire());
+         if (_inventory.woodCount >= 10)
+         {
+            StartCoroutine(LightFire());
+         }
+         else if (_inventory.woodCount < 10)
+         {
+            StartCoroutine(_inventory.NotEnough());
+         }
+            
       }
    }
 
@@ -63,6 +73,11 @@ public class TorchLight : MonoBehaviour
       collision = false;
       _messagePanel.SetActive(false);
       _torch.SetActive(true);
+      ChestComms _chestComms = GameObject.FindGameObjectWithTag("ChestParent").GetComponent<ChestComms>();
+      Inventory _inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+      
+      _chestComms.SubWoodComms();
+      _inventory.UseWood(10);
       
       yield return new WaitForSeconds(0.5f);
       _spriteRenderer.sprite = litFire2;

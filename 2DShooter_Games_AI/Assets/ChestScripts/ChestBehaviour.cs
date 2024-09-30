@@ -19,6 +19,10 @@ public class ChestBehaviour : MonoBehaviour
     [SerializeField]
     private Inventory _inventory;
     public bool key;
+
+    [Header("Communication")] 
+    [SerializeField] private GameObject addWood;
+    [SerializeField] private GameObject subWood;
     
 
     private void Awake()
@@ -40,8 +44,14 @@ public class ChestBehaviour : MonoBehaviour
             }
             else if(!key)
             {
+                ChestComms _chestComms = GameObject.FindGameObjectWithTag("ChestParent").GetComponent<ChestComms>();
+                _chestComms.AddWoodComms();
                 _inventory.CollectWood(30);
             }
+
+            
+            
+            
         }
 
         if (coll.gameObject)

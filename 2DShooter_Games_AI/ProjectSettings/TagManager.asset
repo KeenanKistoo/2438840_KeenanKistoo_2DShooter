@@ -13,6 +13,7 @@ TagManager:
   - Inventory
   - Chest
   - ChestParent
+  - AudioSource
   layers:
   - Default
   - TransparentFX

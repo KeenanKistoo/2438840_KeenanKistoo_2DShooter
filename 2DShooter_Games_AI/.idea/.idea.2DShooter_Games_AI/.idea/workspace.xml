@@ -8,7 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ChestScripts/ChestBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ChestScripts/ChestBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/chest_asset/chest_prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/chest_asset/chest_prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_scripts/EnemyMovementData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/enemy_scripts/EnemyMovementData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/enemy_scripts/enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/enemy_scripts/enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/torch_assets/torchlight_prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/torch_assets/torchlight_prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/torch_scripts/TorchLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/torch_scripts/TorchLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/TilemapVisualizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/pcg_scripts/WallGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player_scripts/FlashlightBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/player_scripts/GeneralSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player_scripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/TileDragAndDrop.cs" root0="SKIP_HIGHLIGHTING" />
   </component>

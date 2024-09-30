@@ -38,6 +38,7 @@ public class TorchLight : MonoBehaviour
          //print("Working");
          if (_inventory.woodCount >= 10)
          {
+            this.gameObject.GetComponent<AudioSource>().Play();
             StartCoroutine(LightFire());
          }
          else if (_inventory.woodCount < 10)

@@ -37,12 +37,22 @@ public class EnemyMovementData : MonoBehaviour
 
    [SerializeField] private bool _isChasing;
 
+   [Header("Audio Elements")] 
+   public AudioSource _audioSource;
+   public AudioClip _chased;
+   public AudioClip _caught1;
+   public AudioClip _caught2;
+   public AudioClip _win;
+   public AudioClip _lose;
+   
+
    private void Start()
    {
       _activate = false;
       _isChasing = false;
       _enemyBehave = EnemyBehave.Wait;
       timer = 0;
+      //_audioSource = GameObject.FindGameObjectWithTag("AudioSource").GetComponent<AudioSource>();
    }
 
    private void Update()
@@ -70,10 +80,11 @@ public class EnemyMovementData : MonoBehaviour
             break;
          case EnemyBehave.Chase:
             //print("Chase Player");
+            
             ChasePlayer();
             //ChasePlayer
             break;
-         case EnemyBehave.Freeze:
+         case EnemyBehave.Freeze: 
             Timer(2f);
             print("Frozen For Time");
             //Player Does Not Move
@@ -149,8 +160,23 @@ public class EnemyMovementData : MonoBehaviour
    private void ChasePlayer()
    {
       targetPos = GameObject.FindGameObjectWithTag("Player").transform.position;
-      
+      _audioSource = this.gameObject.GetComponent<AudioSource>();
+      _audioSource.clip = _chased;
+      _audioSource.Stop();
+      _audioSource.Play(); 
+      //StartCoroutine(BreathSound());
       MoveTowardsNode();
+   }
+
+   private IEnumerator BreathSound()
+   {
+      _audioSource.clip = _chased;
+      _audioSource.Stop();
+      print("Clip:" + _audioSource.clip);
+
+      yield return new WaitForSeconds(0.5f);
+      
+      _audioSource.Play();
    }
 
    public void Freeze()

@@ -38,9 +38,11 @@ public class ChestBehaviour : MonoBehaviour
         if (coll.gameObject == _player)
         {
             _animator.SetTrigger("OpenChest");
-
+            AudioSource _src = this.gameObject.GetComponent<AudioSource>();
+            _src.Play();
             if (key)
             {
+                
                 _inventory.FoundKey();
                 StartCoroutine(_inventory.KeyText());
                 _inventory.keyCollected++;

@@ -31,7 +31,7 @@ public class EnemyMovementData : MonoBehaviour
 
    [SerializeField] private Collider2D[] nearbyColl;
 
-   [SerializeField] private EnemyBehave _enemyBehave;
+   [SerializeField] public EnemyBehave _enemyBehave;
 
    [SerializeField] private float timer;
 

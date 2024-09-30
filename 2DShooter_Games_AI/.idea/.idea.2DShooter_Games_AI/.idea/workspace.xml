@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e57772c-c082-42d1-8207-e07456f6eca0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2DShooter_Games_AI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PCG_Test1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/enemy_scripts/EnemyMovementData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/enemy_scripts/EnemyMovementData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/enemy_scripts/enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/enemy_scripts/enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/levelScripts/LevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/levelScripts/LevelController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/player_scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/player_scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/torch_assets/torchlight_prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/torch_assets/torchlight_prefab.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/player_scripts/FlashlightBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player_scripts/GeneralSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/player_scripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/torch_assets/EnemyTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/TileDragAndDrop.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
